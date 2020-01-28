@@ -1,0 +1,107 @@
+@charset "EUC-KR";
+
+/*-- ----------------------------------------------테스트 페이지 메뉴 입니다-------------------------- */
+#cf {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: red;
+	background-size: cover;
+}
+
+#cf img {
+	position: absolute;
+	left: 0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+	opacity: 0;
+}
+
+.top {
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bottom {
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.top {
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*-- ----------------------------------------------테스트 페이지 메뉴 입니다-------------------------- */
+#text {
+	font-family: 배달의민족 을지로체 TTF; /* 배달의민족 도현; */
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#P1_header {
+	/* background-color: red;  */
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+
+#secondLogo {
+	text-align: center;
+	/* background-color: red;  */
+	margin-bottom: 50px;
+}
+/* 메뉴 */
+#content1 {
+	height: 450px;
+	/* background-color: red; */
+	/*opacity: 0.2; */
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	margin-top: -20px;
+	padding: 3.5rem 3.5rem 2rem 3.5rem;
+}
+
+.menuImg {
+	width: 170px;
+	height: 170px;
+}
+
+.menuBtn {
+	width: 200px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.button {
+	background-color: #2f5597;
+	font-family: 배달의민족 한나는 열한살;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	margin: 4px 30px;
+	cursor: pointer;
+	padding: 5px 50px 15px 50px;
+}
+</style>

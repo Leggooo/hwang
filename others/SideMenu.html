@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		/* 전체 */
+		body {
+		  font-family: 배달의민족 한나는 열한살;
+		}
+		/* 메뉴 오픈 버튼 */
+		#openBtn{
+			margin-top: 10px;
+			margin-left: 10px;
+			width: 4%;
+		}
+		/* 메뉴 클릭 시 배경 색상 */
+		.overlay {
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: rgb(0,0,0);
+		  background-color: rgba(0,0,0, 0.9);
+		  overflow-x: hidden;
+		  transition: 0.1s;
+		  
+		}
+		/* 메뉴 클릭 시 컨텐츠 */
+		.overlay-content {
+		  position: relative;
+		  top: 10%;
+		  width: 100%;
+		  text-align: left;
+		  margin-top: 30px;
+		  margin-left: 30px;
+		}
+		/* 오버레이 전체 */
+		.overlay a {
+		  padding: 8px;
+		  text-decoration: none;
+		  font-size: 40px;
+		  color: white;
+		  display: block;
+		  transition: 0.1s;
+		}
+		/* 누를 때 색상 */
+		.overlay a:hover, .overlay a:focus {
+		  color: #2f5597;
+		  
+		}
+		/* 닫기 버튼 */
+		.overlay .closebtn {
+		  position: absolute;
+		  left: 15px;
+		  top: 3%;
+		  font-size: 60px;
+		  background-image: url("../images/leggo/menu-btn-close.png");
+		  background-repeat: no-repeat;
+		  background-size: contain;
+		}
+		
+		@media screen and (max-height: 450px) {
+		  .overlay a {
+		  font-size: 20px;
+		  }
+		  .overlay .closebtn {
+		  font-size: 40px;
+		  top: 15px;
+		  right: 35px;
+		  }
+		}
+	</style>
+</head>
+<body>
+	<section class="panel banner right"  id="second">
+		<div class="content color1 span-6">
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+		    <a href="#">홈</a>
+		    <a href="#">회사소개</a>
+		    <a href="#">뉴스</a>
+		    <a href="#">개인정보</a>
+		    <a href="#">쪽지함</a>
+			</div>
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+				<img id="openBtn" src="../images/leggo/header-logo.png">
+		 </span>
+		<script>
+			function openNav() {
+			  document.getElementById("myNav").style.width = "100%";
+			}
+			function closeNav() {
+			  document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+	</div>
+</section>
+</body>
+</html>
