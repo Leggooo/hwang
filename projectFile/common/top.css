@@ -1,0 +1,20 @@
+@charset "EUC-KR";
+  	.row{
+  		background-color: #2f5597;
+ 		border: none;
+ 		padding-top: 1%;
+  	}
+  	#leftMenu{
+  		/* background-color: red; */
+  	}
+  	img{
+  		width: 20%;
+  	}
+  	#blankMenu{
+  		/* background-color: blue; */
+  	}
+  	.rightMenu{
+  		/* background-color: red; */ 
+  		text-align: right;
+  	}
+  </style>
